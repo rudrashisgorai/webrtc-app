@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bouncing Ball Client</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      position: relative; 
+    }
+    #remoteVideo {
+      border: 1px solid #333;
+      width: 640px;
+      height: 480px;
+      background: #000;
+    }
+    #errorDisplay {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      color: #e00;
+    }
+
+    #hiddenCanvas {
+      display: none;
+    }
+    
+  </style>
+</head>
+<body>
+  <h2>Bouncing Ball Demo (Client)</h2>
+  <video id="remoteVideo" autoplay playsinline></video>
+  <div id="errorDisplay">Error: --</div>
+  <canvas id="hiddenCanvas"></canvas>
+  <script src="client.js"></script>
+</body>
+</html>
