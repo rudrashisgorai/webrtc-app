@@ -1,10 +1,11 @@
 #  Ball WebTransport+WebRTC Project
 
+<img width="1064" height="597" alt="Screenshot 2025-10-24 at 6 13 30 AM" src="https://github.com/user-attachments/assets/052e7c93-380e-4c3a-911a-d52431879e13" />
+
 ## Overview
 This repository implements a simple interactive demo where a server continuously generates 2D frames of a green bouncing ball and streams those frames (H.264-encoded) to a browser client over WebRTC. In parallel, the browser client analyzes each incoming frame, extracts the ball’s (x, y) coordinates, and sends those coordinates back to the server. The server calculates a real-time error between the detected coordinates and the ground truth, then sends that error back to the browser. All control signaling (SDP offers/answers, ICE candidates) flows over WebTransport (HTTP/3 + QUIC), and video streaming uses WebRTC (PeerConnection).
 
 ---
-
 
 
 - **`client/`**  
